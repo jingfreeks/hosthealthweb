@@ -174,26 +174,6 @@ exports[`Search Term Page renders Search Term Page to match snaptshots 1`] = `
         <h2>
           <a
             class="text-xl font-bold underline"
-            href="https://en.wikipedia.org/?curid=759125"
-            target="_blank"
-          >
-            England cricket team
-          </a>
-        </h2>
-        <p>
-          The England men's cricket team represents England and Wales in international cricket. Since 1997, it...
-        </p>
-      </div>
-    </article>
-    <article
-      class="m-4 max-w-lg"
-    >
-      <div
-        class="flex flex-col justify-center"
-      >
-        <h2>
-          <a
-            class="text-xl font-bold underline"
             href="https://en.wikipedia.org/?curid=1461217"
             target="_blank"
           >
@@ -402,6 +382,26 @@ The testing of the former Emergency...
           Test(s), testing, or TEST may refer to:
 
 Test (assessment), an educational assessment intended to measure...
+        </p>
+      </div>
+    </article>
+    <article
+      class="m-4 max-w-lg"
+    >
+      <div
+        class="flex flex-col justify-center"
+      >
+        <h2>
+          <a
+            class="text-xl font-bold underline"
+            href="https://en.wikipedia.org/?curid=17447150"
+            target="_blank"
+          >
+            Trendelenburg test
+          </a>
+        </h2>
+        <p>
+          The Trendelenburg Test or Brodie–Trendelenburg test  is a test which can be carried out as part of a...
         </p>
       </div>
     </article>

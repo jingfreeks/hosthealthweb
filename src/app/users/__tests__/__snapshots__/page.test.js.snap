@@ -27,6 +27,70 @@ exports[`User Screen Page renders User Screen Page to match snaptshots 1`] = `
       </a>
     </p>
     <br />
+    <p>
+      <a
+        href="/users/3"
+      >
+        Clementine Bauch
+      </a>
+    </p>
+    <br />
+    <p>
+      <a
+        href="/users/4"
+      >
+        Patricia Lebsack
+      </a>
+    </p>
+    <br />
+    <p>
+      <a
+        href="/users/5"
+      >
+        Chelsey Dietrich
+      </a>
+    </p>
+    <br />
+    <p>
+      <a
+        href="/users/6"
+      >
+        Mrs. Dennis Schulist
+      </a>
+    </p>
+    <br />
+    <p>
+      <a
+        href="/users/7"
+      >
+        Kurtis Weissnat
+      </a>
+    </p>
+    <br />
+    <p>
+      <a
+        href="/users/8"
+      >
+        Nicholas Runolfsdottir V
+      </a>
+    </p>
+    <br />
+    <p>
+      <a
+        href="/users/9"
+      >
+        Glenna Reichert
+      </a>
+    </p>
+    <br />
+    <p>
+      <a
+        href="/users/10"
+      >
+        Clementina DuBuque
+      </a>
+    </p>
+    <br />
   </section>
 </div>
 `;
