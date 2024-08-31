@@ -85,41 +85,6 @@ exports[`Search Term Page renders Search Term Page to match snaptshots 1`] = `
           class="flex flex-col justify-center"
         >
           <img
-            alt="Mantoux test"
-            height="33"
-            loading="lazy"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Mantoux_tuberculin_skin_test.jpg/50px-Mantoux_tuberculin_skin_test.jpg"
-            width="50"
-          />
-        </div>
-        <div
-          class="flex flex-col justify-center"
-        >
-          <h2>
-            <a
-              class="text-xl font-bold underline"
-              href="https://en.wikipedia.org/?curid=54995"
-              target="_blank"
-            >
-              Mantoux test
-            </a>
-          </h2>
-          <p>
-            The Mantoux test or Mendel–Mantoux test (also known as the Mantoux screening test, tuberculin sensitivity...
-          </p>
-        </div>
-      </div>
-    </article>
-    <article
-      class="m-3 max-w-lg"
-    >
-      <div
-        class="flex flex-row gap-4"
-      >
-        <div
-          class="flex flex-col justify-center"
-        >
-          <img
             alt="Rorschach test"
             height="33"
             loading="lazy"
@@ -359,6 +324,41 @@ The testing of the former Emergency...
           </h2>
           <p>
             The Thompson test (also called Simmonds' test or Simmonds-Thompson test) is used in lower limb examination...
+          </p>
+        </div>
+      </div>
+    </article>
+    <article
+      class="m-3 max-w-lg"
+    >
+      <div
+        class="flex flex-row gap-4"
+      >
+        <div
+          class="flex flex-col justify-center"
+        >
+          <img
+            alt="Seliwanoff's test"
+            height="52"
+            loading="lazy"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Seliwanow-Probe.jpg/50px-Seliwanow-Probe.jpg"
+            width="50"
+          />
+        </div>
+        <div
+          class="flex flex-col justify-center"
+        >
+          <h2>
+            <a
+              class="text-xl font-bold underline"
+              href="https://en.wikipedia.org/?curid=8112701"
+              target="_blank"
+            >
+              Seliwanoff's test
+            </a>
+          </h2>
+          <p>
+            Seliwanoff’s test is a chemical test which distinguishes between aldose and ketose sugars. If the sugar...
           </p>
         </div>
       </div>
