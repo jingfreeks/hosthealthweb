@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About Page renders About Page to match snaptshot 1`] = `
+<div>
+  <div>
+    About
+  </div>
+  <a
+    href="/"
+  >
+    Link to Home Page
+  </a>
+</div>
+`;
