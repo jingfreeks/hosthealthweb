@@ -27,7 +27,7 @@ export const RegisterForm = () => {
     }
   };
   return (
-    <form onSubmit={onSubmit}
+    <form  data-testid="RegisterMainForm" onSubmit={onSubmit}
     className="space-y-12 w[400px]">
 
       <div className="grid w-full max-w-sm items-center gap-1.5">

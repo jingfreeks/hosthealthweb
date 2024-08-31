@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User Screen Page renders User Screen Page to match snaptshots 1`] = `
+<div>
+  <section>
+    <h2>
+      <a
+        href="/"
+      >
+        Back to Home
+      </a>
+    </h2>
+    <br />
+    <p>
+      <a
+        href="/users/1"
+      >
+        Leanne Graham
+      </a>
+    </p>
+    <br />
+    <p>
+      <a
+        href="/users/2"
+      >
+        Ervin Howell
+      </a>
+    </p>
+    <br />
+  </section>
+</div>
+`;
