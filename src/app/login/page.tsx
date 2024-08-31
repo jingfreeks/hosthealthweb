@@ -10,7 +10,7 @@ export default function LoginPage(props: Props) {
         <h1 className="font-semibold text-2xl">Login</h1>
         <p className="text-center">
           Need to create an account?{""}
-          <Link className="text-indigo-500 hover:underline" href="/account/register">
+          <Link className="text-indigo-500 hover:underline" href="/register">
             Create Account
           </Link>
         </p>
