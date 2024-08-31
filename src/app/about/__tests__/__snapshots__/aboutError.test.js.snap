@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`About Page renders About Page to match snaptshot 1`] = `
+exports[`About Error Page renders About  Error Page to match snaptshot 1`] = `
 <div>
   <div>
     <h2>
