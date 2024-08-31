@@ -1,11 +1,11 @@
-import { render,baseRender } from "@testing-library/react";
-import Page from "../page";
+import { render } from "@testing-library/react";
+import ItemSearch from "../item";
 
-global.fetch = jest.fn(() =>
-  Promise.resolve({
-    json: () =>
-      Promise.resolve({
-        24884283: {
+describe("Item Component", () => {
+  it("renders Item Component to match snapshot", async () => {
+    const { container } = render(
+      await ItemSearch({
+        result: {
           pageid: 24884283,
           ns: 0,
           title: "TeST Gliders",
@@ -20,19 +20,7 @@ global.fetch = jest.fn(() =>
           extract:
             "TeST Gliders was a manufacturer of ultralight sailplanes and motorgliders based in Brno, Czech Republic...",
         },
-      }),
-  })
-);
-
-describe("Search Term Page", () => {
-  const props = {
-    params: {
-      searchTerm: "",
-    },
-  };
-  it("renders Search Term Page to match snaptshots", async () => {
-    const { container } = render(
-      await Page({ params: { searchTerm: "test" } })
+      })
     );
     expect(container).toMatchSnapshot();
   });

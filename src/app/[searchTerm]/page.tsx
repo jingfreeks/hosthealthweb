@@ -25,7 +25,9 @@ export async function generateMetadata({ params: { searchTerm } }: Props){
 }
 export default async function page({ params: { searchTerm } }: Props) {
   const resData: Promise<SearchResult> = getSearchResults(searchTerm);
+
   const data = await resData;
+  console.log('results',data?.query?.pages)
   const results: Result[] | undefined = data?.query?.pages;
 
   const content = (
