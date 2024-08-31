@@ -15,6 +15,7 @@ exports[`Register Screen Page renders Register Screen Page to match snaptshots 1
       </h1>
       <form
         class="space-y-12 w[400px]"
+        data-testid="RegisterMainForm"
       >
         <div
           class="grid w-full max-w-sm items-center gap-1.5"
