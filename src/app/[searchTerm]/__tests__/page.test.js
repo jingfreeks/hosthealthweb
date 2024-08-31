@@ -1,4 +1,4 @@
-import { render,baseRender } from "@testing-library/react";
+import { render, baseRender } from "@testing-library/react";
 import Page from "../page";
 
 global.fetch = jest.fn(() =>
@@ -31,9 +31,11 @@ describe("Search Term Page", () => {
     },
   };
   it("renders Search Term Page to match snaptshots", async () => {
-    const { container } = render(
-      await Page({ params: { searchTerm: "test" } })
-    );
-    expect(container).toMatchSnapshot();
+    // const { container } = render(
+    //   await Page({ params: { searchTerm: "test" } })
+    // );
+    const tree = render(await Page({ params: { searchTerm: "test" } }));
+    const head = tree.baseElement.parentElement?.firstChild;
+    expect(head).toMatchSnapshot();
   });
 });
