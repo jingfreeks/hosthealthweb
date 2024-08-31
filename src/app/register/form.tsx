@@ -3,8 +3,8 @@ import React,{useState} from "react";
 import { useRouter } from 'next/navigation';
 import { Input, Button,Label } from "@/components/ui";
 export const RegisterForm = () => {
-  const [email,setEmail]=useState('')
-  const [password,setPassword]=useState('')
+  const [email,setEmail]=useState<string>('')
+  const [password,setPassword]=useState<string>('')
   const { push } = useRouter();
   const onSubmit = async(e: React.FormEvent) => {
     e.preventDefault();
