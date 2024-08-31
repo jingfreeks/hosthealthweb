@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search Term Loading Page renders Search Term Loading Page to match snapshots 1`] = `
+<div>
+  <main
+    class="bg-slate-200 mx-auto max-w-lg p-1 min-h-screen"
+  >
+    <h2
+      class="m-4 text-2xl font-bold"
+    >
+      Loading...
+    </h2>
+  </main>
+</div>
+`;
