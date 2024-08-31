@@ -1,6 +1,12 @@
 import { render } from "@testing-library/react";
 import Page from "../page";
 
+global.fetch = jest.fn(() =>
+    Promise.resolve({
+      json: () => Promise.resolve({ test: 100 }),
+    }),
+  )
+  
 describe("Search Term Page", () => {
   const props = {
     params: {
