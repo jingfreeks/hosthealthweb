@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login Screen Page renders Login Screen Page to match snaptshots 1`] = `
+<div>
+  <div
+    class="h-screen w-screen flex justify-center items-center bg-slate-100"
+  >
+    <div
+      class="sm:shadowo-xl px-8 pb-8 pt-12 sm:bg-white rounded-xl space-y-12"
+    >
+      <h1
+        class="font-semibold text-2xl"
+      >
+        Login
+      </h1>
+      <p
+        class="text-center"
+      >
+        Need to create an account?
+        <a
+          class="text-indigo-500 hover:underline"
+          href="/register"
+        >
+          Create Account
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+`;
