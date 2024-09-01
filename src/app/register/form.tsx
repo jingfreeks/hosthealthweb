@@ -6,6 +6,8 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { Schema } from "./schema";
 import * as yup from "yup";
+import { ReloadIcon } from "@radix-ui/react-icons";
+import { useSignupMutation } from "@/slice/authApi";
 
 export const RegisterForm = () => {
   type FormData = yup.InferType<typeof Schema>;
@@ -16,24 +18,20 @@ export const RegisterForm = () => {
     formState: { errors },
   } = useForm<FormData>({ resolver: yupResolver(Schema) });
   const { push } = useRouter();
+  const [signup, { isLoading, error }] = useSignupMutation();
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     try {
-      // const response=await fetch('/api/register',{
-      //   method:'POST',
-      //   body:JSON.stringify({
-      //     email,password
-      //   }),
-      //   headers:{
-      //     'Content-Type':'application/json'
-      //   }
-      // })
-      // if(response.ok){
-
-      // }
-      // push("/");
-      console.log("test");
-    } catch (error) {}
+      await signup({
+        username: data.username,
+        password: data.password,
+      }).unwrap();
+      push("/");
+      console.log("test",data);
+    } catch (error) {
+      console.log("error", error);
+    }
   };
+  console.log("isLoading", process.env.DEV_BASE_URL);
   return (
     <form
       data-testid="RegisterMainForm"
@@ -57,8 +55,15 @@ export const RegisterForm = () => {
         <p>{errors.cpassword?.message}</p>
       </div>
       <div className="w-full">
-        <Button className="w-full" size={"lg"}>
-          Register
+        <Button disabled={isLoading} className="w-full" size={"lg"}>
+          {isLoading ? (
+            <>
+              <ReloadIcon className="mr-2 h-4 w-4 animate-spin" />
+              Please wait
+            </>
+          ) : (
+            "Register"
+          )}
         </Button>
       </div>
     </form>
