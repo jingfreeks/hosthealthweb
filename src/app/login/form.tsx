@@ -7,9 +7,10 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { Schema } from "./schema";
 import * as yup from "yup";
 import { ReloadIcon } from "@radix-ui/react-icons";
-import { useSignupMutation } from "@/slice/authApi";
-
-export const RegisterForm = () => {
+import {useLoginMutation} from '@/slice/authApi';
+import {setCredentials} from '@/slice/auth';
+import {useAppDispatch} from '@/lib/hooks'
+export const LoginForm = () => {
   type FormData = yup.InferType<typeof Schema>;
   const {
     register,
@@ -17,13 +18,15 @@ export const RegisterForm = () => {
     formState: { errors },
   } = useForm<FormData>({ resolver: yupResolver(Schema) });
   const { push } = useRouter();
-  const [signup, { isLoading, error }] = useSignupMutation();
+  const dispatch=useAppDispatch()
+  const [login, {isLoading}] = useLoginMutation();
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     try {
-      await signup({
+      const userData: any = await login({
         username: data.username,
         password: data.password,
       }).unwrap();
+      dispatch(setCredentials({...userData, user: data.username}));
       push("/");
     } catch (error) {
       console.log("error", error);
@@ -46,11 +49,6 @@ export const RegisterForm = () => {
         <Input id="password" type="password" {...register("password")} />
         <p>{errors.password?.message}</p>
       </div>
-      <div className="grid w-full max-w-sm items-center gap-1.5">
-        <Label htmlFor="password">Confirm Password</Label>
-        <Input id="cpassword" type="password" {...register("cpassword")} />
-        <p>{errors.cpassword?.message}</p>
-      </div>
       <div className="w-full">
         <Button disabled={isLoading} className="w-full" size={"lg"}>
           {isLoading ? (
@@ -59,7 +57,7 @@ export const RegisterForm = () => {
               Please wait
             </>
           ) : (
-            "Register"
+            "Login"
           )}
         </Button>
       </div>
