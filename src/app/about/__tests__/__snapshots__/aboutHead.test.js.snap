@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About Head Page renders About Head Page to match snaptshot 1`] = `
+<div>
+  <title>
+    About Page
+  </title>
+  <meta
+    content="with=device-width,initial-scale=1"
+    name="viewport"
+  />
+  <meta
+    content="Created by Lyndell"
+    name="description"
+  />
+  <link
+    href="/favicon.ico"
+    rel="icon"
+  />
+</div>
+`;

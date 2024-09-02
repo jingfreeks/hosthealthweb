@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About Layout Page renders About Layout Page to match snaptshot 1`] = `
+<div>
+  <nav>
+    About Nav bar
+  </nav>
+  <main
+    class="main"
+  />
+</div>
+`;

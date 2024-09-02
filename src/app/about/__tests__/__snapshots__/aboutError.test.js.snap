@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About Error Page renders About  Error Page to match snaptshot 1`] = `
+<div>
+  <div>
+    <h2>
+      Something went wrong!
+    </h2>
+    <button>
+      Try again
+    </button>
+  </div>
+</div>
+`;
