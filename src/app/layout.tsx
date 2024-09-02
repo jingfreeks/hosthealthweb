@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Navbar from "./components/navbar";
+import Menu from './components/menu'
 import StoreProvider from "./StoreProvider";
 export const metadata: Metadata = {
   title: "hosthealth",
@@ -15,6 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-slate-800">
         <Navbar />
+        <Menu />
         <StoreProvider>{children}</StoreProvider>
       </body>
     </html>

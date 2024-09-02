@@ -36,6 +36,55 @@ exports[`Layout  renders Layout unchanged to match snapshot 1`] = `
           </button>
         </form>
       </nav>
+      <nav
+        class="bg-slate-600  flex justify-end flex-col md:flex-row sticky top-0 drop-shadow-xl"
+      >
+        <h2
+          class="text-1xl font-bold text-white grid place-content-center mb-2 md:mb-0 p-4"
+        >
+          <a
+            href="/"
+          >
+            Home
+          </a>
+        </h2>
+        <h2
+          class="text-1xl font-bold text-white grid place-content-center mb-2 md:mb-0 p-4"
+        >
+          <a
+            href="/"
+          >
+            News
+          </a>
+        </h2>
+        <h2
+          class="text-1xl font-bold text-white grid place-content-center mb-2 md:mb-0 p-4"
+        >
+          <a
+            href="/"
+          >
+            Contact
+          </a>
+        </h2>
+        <h2
+          class="text-1xl font-bold text-white grid place-content-center mb-2 md:mb-0 p-4"
+        >
+          <a
+            href="/"
+          >
+            About
+          </a>
+        </h2>
+        <h2
+          class="text-1xl font-bold text-white grid place-content-center mb-2 md:mb-0 p-4"
+        >
+          <a
+            href="/"
+          >
+            Sign-Out
+          </a>
+        </h2>
+      </nav>
     </body>
   </html>
 </div>
